@@ -3,74 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#10243a">
-  <title>SiteFlow · Housing v0.11.14</title>
+  <meta name="theme-color" content="#0f1b3d">
+  <title>SiteFlow · Operations Platform — Housing</title>
+  <meta name="description" content="SiteFlow Housing — planificare cazări, ocupare, costuri și rapoarte pentru echipele de șantier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/siteflow-ds.css">
 </head>
 <body>
   <div class="mobile-backdrop" id="mobileBackdrop"></div>
   <div class="app-shell">
-    <aside class="sidebar" id="sidebar"><div class="sidebar-resizer" id="sidebarResizer" title="Trage pentru redimensionarea meniului"></div>
-      <div class="brand-block"><div class="brand-mark">SF</div><div><strong>SiteFlow</strong><span>Operations Platform</span></div></div>
+    <aside class="sidebar" id="sidebar"><div class="sidebar-resizer" id="sidebarResizer" data-i18n-title="nav.resize" title="Trage pentru redimensionarea meniului"></div>
+      <div class="brand-block"><div class="brand-mark">SF</div><div><strong>SiteFlow</strong><span data-i18n="brand.tagline">Operations Platform</span></div></div>
       <nav class="main-nav" aria-label="Navigare principală">
         <div class="nav-group open" data-group="housing">
-          <button class="nav-link nav-parent active" data-view="housing"><span class="nav-icon housing-icon">⌂</span><b>Housing</b><span class="chevron">⌄</span></button>
+          <button class="nav-link nav-parent active" data-view="housing"><span class="nav-icon housing-icon">⌂</span><b data-i18n="nav.housing">Housing</b><span class="chevron">⌄</span></button>
           <div class="nav-children">
-            <div class="nav-subgroup-label">HOUSING</div>
-            <button class="nav-child" data-section="dashboard"><span>▦</span>Dashboard</button>
-            <div class="nav-subgroup-label">PLANIFICARE</div>
-            <button class="nav-child active" data-section="planner"><span>▦</span>Planner</button>
+            <div class="nav-subgroup-label" data-i18n="group.housing">HOUSING</div>
+            <button class="nav-child" data-section="dashboard"><span>▦</span><span data-i18n="nav.dashboard">Dashboard</span></button>
+            <div class="nav-subgroup-label" data-i18n="group.planning">PLANIFICARE</div>
+            <button class="nav-child active" data-section="planner"><span>◫</span><span data-i18n="nav.planner">Planner</span></button>
             <div class="sidebar-section open">
-              <button class="sidebar-section-toggle" type="button"><span>CAZĂRI</span><b>⌄</b></button>
+              <button class="sidebar-section-toggle" type="button"><span data-i18n="group.stays">CAZĂRI</span><b>⌄</b></button>
               <div class="sidebar-section-body">
-                <button class="nav-child" data-section="active"><span>●</span>Active <em id="activeBadge">—</em></button>
-                <button class="nav-child" data-section="planned"><span>◷</span>Planificate <em id="plannedBadge">—</em></button>
-                <button class="nav-child" data-section="movements"><span>⇄</span>Sosiri și plecări <em id="movementsBadge">—</em></button>
-                <button class="nav-child" data-section="expired"><span>⚠</span>Expirate <em id="expiredBadge">—</em></button>
+                <button class="nav-child" data-section="active"><span>●</span><span data-i18n="nav.active">Active</span><em id="activeBadge">—</em></button>
+                <button class="nav-child" data-section="planned"><span>◷</span><span data-i18n="nav.planned">Planificate</span><em id="plannedBadge">—</em></button>
+                <button class="nav-child" data-section="movements"><span>⇄</span><span data-i18n="nav.movements">Sosiri și plecări</span><em id="movementsBadge">—</em></button>
+                <button class="nav-child" data-section="expired"><span>⚠</span><span data-i18n="nav.expired">Expirate</span><em id="expiredBadge">—</em></button>
               </div>
             </div>
             <div class="sidebar-section open">
-              <button class="sidebar-section-toggle" type="button"><span>PERSOANE</span><b>⌄</b></button>
+              <button class="sidebar-section-toggle" type="button"><span data-i18n="group.people">PERSOANE</span><b>⌄</b></button>
               <div class="sidebar-section-body">
-                <button class="nav-child" data-section="unhoused"><span>!</span>Necazate <em id="unhousedBadge">—</em></button>
-                <button class="nav-child" data-section="history"><span>↺</span>Istoric cazări <em id="historyBadge">—</em></button>
+                <button class="nav-child" data-section="unhoused"><span>!</span><span data-i18n="nav.unhoused">Necazate</span><em id="unhousedBadge">—</em></button>
+                <button class="nav-child" data-section="history"><span>↺</span><span data-i18n="nav.history">Istoric cazări</span><em id="historyBadge">—</em></button>
               </div>
             </div>
             <div class="sidebar-section open">
-              <button class="sidebar-section-toggle" type="button"><span>CONFIGURARE</span><b>⌄</b></button>
+              <button class="sidebar-section-toggle" type="button"><span data-i18n="group.config">CONFIGURARE</span><b>⌄</b></button>
               <div class="sidebar-section-body">
-                <button class="nav-child" data-section="locations"><span>⌖</span>Locații <em id="locationsBadge">—</em></button>
-                <button class="nav-child" data-section="rooms"><span>▤</span>Camere <em id="roomsBadge">—</em></button>
-                <button class="nav-child" data-section="costs"><span>€</span>Costuri și facturare <em id="costsBadge">—</em></button>
-                <button class="nav-child" data-section="reports"><span>↗</span>Rapoarte <em id="reportsBadge">—</em></button>
-                <button class="nav-child" data-section="alerts"><span>⚠</span>Alerte <em id="alertsBadge">—</em></button>
+                <button class="nav-child" data-section="locations"><span>⌖</span><span data-i18n="nav.locations">Locații</span><em id="locationsBadge">—</em></button>
+                <button class="nav-child" data-section="rooms"><span>▤</span><span data-i18n="nav.rooms">Camere</span><em id="roomsBadge">—</em></button>
+                <button class="nav-child" data-section="costs"><span>€</span><span data-i18n="nav.costs">Costuri și facturare</span><em id="costsBadge">—</em></button>
+                <button class="nav-child" data-section="reports"><span>↗</span><span data-i18n="nav.reports">Rapoarte</span><em id="reportsBadge">—</em></button>
+                <button class="nav-child" data-section="alerts"><span>⚠</span><span data-i18n="nav.alerts">Alerte</span><em id="alertsBadge">—</em></button>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <div class="workspace-label">MODULE</div>
+      <div class="workspace-label" data-i18n="group.modules">MODULE</div>
       <nav class="main-nav module-nav">
-        <button class="nav-link locked" data-module-name="Site Activities"><span class="nav-icon activity-icon">☀</span><b>Site Activities</b><em>Curând</em></button>
-        <button class="nav-link locked" data-module-name="HR"><span class="nav-icon hr-icon">◎</span><b>HR</b><em>Curând</em></button>
-        <button class="nav-link locked" data-module-name="Assets / Tools"><span class="nav-icon assets-icon">◆</span><b>Assets / Tools</b><em>Curând</em></button>
-        <button class="nav-link locked" data-module-name="Fleet"><span class="nav-icon fleet-icon">▱</span><b>Fleet</b><em>Curând</em></button>
-        <button class="nav-link locked" data-module-name="Documents"><span class="nav-icon docs-icon">▤</span><b>Documents</b><em>Curând</em></button>
+        <button class="nav-link locked" data-module-name="Site Activities"><span class="nav-icon activity-icon">☀</span><b>Site Activities</b><em data-i18n="nav.soon">Curând</em></button>
+        <button class="nav-link locked" data-module-name="HR"><span class="nav-icon hr-icon">◎</span><b>HR</b><em data-i18n="nav.soon">Curând</em></button>
+        <button class="nav-link locked" data-module-name="Assets / Tools"><span class="nav-icon assets-icon">◆</span><b>Assets / Tools</b><em data-i18n="nav.soon">Curând</em></button>
+        <button class="nav-link locked" data-module-name="Fleet"><span class="nav-icon fleet-icon">▱</span><b>Fleet</b><em data-i18n="nav.soon">Curând</em></button>
+        <button class="nav-link locked" data-module-name="Documents"><span class="nav-icon docs-icon">▤</span><b>Documents</b><em data-i18n="nav.soon">Curând</em></button>
       </nav>
-      <div class="workspace-label">SISTEM</div>
-      <nav class="main-nav admin-nav"><button class="nav-link" id="adminPeople"><span class="nav-icon">♙</span><b>Persoane</b></button><button class="nav-link" id="adminCompanies"><span class="nav-icon">▦</span><b>Companii</b></button><button class="nav-link" id="adminSites"><span class="nav-icon">⌁</span><b>Șantiere</b></button><button class="nav-link" id="adminUsers"><span class="nav-icon">♧</span><b>Utilizatori</b></button><button class="nav-link" id="adminRoles"><span class="nav-icon">◈</span><b>Roluri și permisiuni</b></button><button class="nav-link" id="adminBtn"><span class="nav-icon">⚙</span><b>Setări generale</b></button></nav>
+      <div class="workspace-label" data-i18n="group.system">SISTEM</div>
+      <nav class="main-nav admin-nav"><button class="nav-link" id="adminPeople"><span class="nav-icon">♙</span><b data-i18n="nav.people">Persoane</b></button><button class="nav-link" id="adminCompanies"><span class="nav-icon">▦</span><b data-i18n="nav.companies">Companii</b></button><button class="nav-link" id="adminSites"><span class="nav-icon">⌁</span><b data-i18n="nav.sites">Șantiere</b></button><button class="nav-link" id="adminUsers"><span class="nav-icon">♧</span><b data-i18n="nav.users">Utilizatori</b></button><button class="nav-link" id="adminRoles"><span class="nav-icon">◈</span><b data-i18n="nav.roles">Roluri și permisiuni</b></button><button class="nav-link" id="adminBtn"><span class="nav-icon">⚙</span><b data-i18n="nav.general">Setări generale</b></button></nav>
+      <button class="nav-collapse-btn" id="navCollapseBtn" data-i18n-title="nav.collapse" title="Restrânge meniul">«</button>
       <div class="sidebar-footer"><div class="connection"><i id="connectionDot"></i><span id="connectionLabel">Conectare…</span></div><small>SiteFlow · Housing v0.11.14</small></div>
     </aside>
 
     <main class="main-area">
       <header class="topbar">
-        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Deschide meniul">☰</button>
-        <div class="topbar-title"><span id="moduleEyebrow">MODUL</span><strong id="moduleTitle">Housing</strong></div>
-        <div class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Caută persoană, locație sau cameră"></div>
+        <button class="icon-btn menu-toggle" id="menuToggle" data-i18n-title="topbar.menu" aria-label="Deschide meniul">☰</button>
+        <div class="topbar-title"><span id="moduleEyebrow" data-i18n="topbar.module">MODUL</span><strong id="moduleTitle">Housing</strong></div>
+        <div class="global-search"><span>⌕</span><input id="globalSearch" data-i18n-placeholder="search.placeholder" placeholder="Caută persoană, locație sau cameră"><kbd class="search-kbd">/</kbd></div>
         <div class="topbar-actions">
-          <button class="icon-btn" id="themeToggle" title="Schimbă tema" aria-label="Schimbă tema">☾</button>
-          <button class="secondary-btn" id="refreshBtn">↻ <span>Actualizează</span></button>
-          <button class="primary-btn" id="newStayBtn">＋ Cazare nouă</button>
+          <button class="icon-btn" id="themeToggle" data-i18n-title="topbar.theme" title="Schimbă tema" aria-label="Schimbă tema">☾</button>
+          <button class="secondary-btn" id="refreshBtn">↻ <span data-i18n="topbar.refresh">Actualizează</span></button>
+          <button class="primary-btn" id="newStayBtn">＋ <span data-i18n="topbar.newStay">Cazare nouă</span></button>
           <button class="avatar-btn" id="profileBtn">G</button>
         </div>
       </header>
@@ -141,6 +147,20 @@
         <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING / FINANCIAR</span><h1>Costuri și facturare</h1><p>Tarife, costuri calculate, distribuții și export pentru Housing.</p></div><div class="heading-actions"><button class="secondary-btn" id="financeRatesBtn">⚙ Tarife camere</button><button class="primary-btn" id="financeExportBtn">↗ Exportă / Printează</button></div></div>
         <div class="panel finance-page-panel"><form id="financeFilterForm" class="cost-filter cost-filter-extended"></form><div id="financePageContent"></div></div>
       </section>
+
+      <section class="page hidden" id="reportsView">
+        <div class="page-heading compact"><div><span class="eyebrow" data-i18n="page.reports.crumb">SITEFLOW / HOUSING / ANALIZĂ</span><h1 data-i18n="page.reports.title">Centru de rapoarte</h1><p data-i18n="page.reports.sub">Filtrează, generează și exportă rapoarte operaționale pentru Housing.</p></div><div class="heading-actions export-row"><button class="secondary-btn" id="reportsPrintBtn">⎙ <span data-i18n="reports.print">Printează</span></button><button class="primary-btn" id="reportsExportBtn">↗ <span data-i18n="reports.export">Export</span></button></div></div>
+        <div class="history-summary-grid" id="reportsSummary"></div>
+        <div class="panel history-page-panel">
+          <form id="reportsFilters" class="cost-filter cost-filter-extended"></form>
+          <div class="data-table-wrap" id="reportsPageContent"></div>
+        </div>
+      </section>
+
+      <section class="page hidden" id="settingsView">
+        <div class="page-heading compact"><div><span class="eyebrow" data-i18n="page.settings.crumb">SITEFLOW / HOUSING / SETĂRI</span><h1 data-i18n="page.settings.title">Setări</h1><p data-i18n="page.settings.sub">Preferințe de afișare, limbă și comportament pentru modulul Housing.</p></div></div>
+        <div id="settingsContent"></div>
+      </section>
     </main>
   </div>
 
@@ -158,6 +178,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
   <script src="services/supabase-service.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/siteflow-ui.js"></script>
 </body>
 </html>
