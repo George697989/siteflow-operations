@@ -1,0 +1,883 @@
+{
+  "date_from": "2026-06-28",
+  "date_to": "2026-08-02",
+  "locations": [
+    {
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "name": "Brochterbeck — Rotdornweg 11; 48477 Hörstel"
+    },
+    {
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "name": "Brochterbeck — Lengericher Str. 10 , 49545 Tecklenburg"
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "name": "BRONHOF — Gartenstraße 15,97490 Poppenhausen"
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "name": "BRONHOF — Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen"
+    },
+    {
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "name": "Deggendorf — INDUSTRIE STR.18,94459 DEGGENDORF"
+    },
+    {
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "name": "Deggendorf — GOIDERTWEG 10,94469 DEGGENDORF"
+    },
+    {
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "name": "Deggendorf — Passauer Straße 18, 94491 Hengersberg, Deutschland"
+    },
+    {
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "name": "Schwandorf — 238 Schwandorf 92421 Rothlindestr 27"
+    },
+    {
+      "city": "Schwandorf",
+      "address": "236 Schwandorf 92421 Rothlindestr 7 b",
+      "name": "Schwandorf — 236 Schwandorf 92421 Rothlindestr 7 b"
+    }
+  ],
+  "units": [
+    {
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "room": "1",
+      "floor": "",
+      "capacity": 2,
+      "rate": 23.5
+    },
+    {
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "room": "2",
+      "floor": "",
+      "capacity": 2,
+      "rate": 23.5
+    },
+    {
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "1",
+      "floor": "",
+      "capacity": 2,
+      "rate": 23.5
+    },
+    {
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "2",
+      "floor": "",
+      "capacity": 2,
+      "rate": 23.5
+    },
+    {
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "3",
+      "floor": "",
+      "capacity": 2,
+      "rate": 23.5
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "1",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "3",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "1",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "2",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "3",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 25.0
+    },
+    {
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "9",
+      "floor": "1",
+      "capacity": 1,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "1",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "2",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "3",
+      "floor": "1",
+      "capacity": 3,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "4",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "5",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "6",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "room": "7",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 21.5
+    },
+    {
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "room": "8",
+      "floor": "1",
+      "capacity": 1,
+      "rate": 21.5
+    },
+    {
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "1",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 26.0
+    },
+    {
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "2",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 26.0
+    },
+    {
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "3",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 26.0
+    },
+    {
+      "city": "Schwandorf",
+      "address": "236 Schwandorf 92421 Rothlindestr 7 b",
+      "room": "1",
+      "floor": "1",
+      "capacity": 2,
+      "rate": 26.0
+    }
+  ],
+  "people": [
+    "Andrei Alina Elena",
+    "Banulici Ioan Dorel",
+    "Copanoi Constantin",
+    "Coprean Silvestru Titus",
+    "Cristian Daniel",
+    "Darida Dorin Mark",
+    "Darida Gheorghe Lucian",
+    "Daszkal Istvan Sandor",
+    "Daszkal Norbert",
+    "Dominco Daniel",
+    "Feher Balazs",
+    "Florea Csaba",
+    "Gal Csaba",
+    "Gavrila Adrian Nicolae",
+    "Gavrila Daniel Mihael",
+    "Ghurka Daniel Alexandru",
+    "Hainal Csaba",
+    "Hietsoi Vadym",
+    "Horvath Monica",
+    "Horvath Vasile",
+    "Huszti Karoly",
+    "Kiss Szabolcs",
+    "Koretskyi Ivan",
+    "Lepadatu Romeo Ionut",
+    "Lisnic Marius Calin",
+    "Micu Mariana Angelica",
+    "Mocanu Alexandru Stefan",
+    "Mocanu Aurel",
+    "Mocanu Doru",
+    "Mona Levente Zsolt",
+    "Mona Robert Ioan",
+    "Olah Gheorghe",
+    "Oprea Aron",
+    "PROVIZORIU Traian",
+    "Panea Ioan Kristisztian",
+    "Poiana Constantin",
+    "Probli Janos Joseph",
+    "Rostas Ambroziu Adrian",
+    "Rostas Ambroziu Valeriu",
+    "Tanase Ștefan",
+    "Trifan Olimpiu",
+    "Ungurianu Ionel",
+    "Vasiliu Marius Gabriel"
+  ],
+  "stays": [
+    {
+      "person": "Andrei Alina Elena",
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "room": "8",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Banulici Ioan Dorel",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 25.0
+    },
+    {
+      "person": "Banulici Ioan Dorel",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-23",
+      "end": "2026-07-25",
+      "rate": 25.0
+    },
+    {
+      "person": "Banulici Ioan Dorel",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-21",
+      "rate": 21.5
+    },
+    {
+      "person": "Copanoi Constantin",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "2",
+      "floor": "",
+      "start": "2026-07-07",
+      "end": "2026-07-26",
+      "rate": 23.5
+    },
+    {
+      "person": "Coprean Silvestru Titus",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "9",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-14",
+      "rate": 21.5
+    },
+    {
+      "person": "Coprean Silvestru Titus",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "3",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-04",
+      "rate": 23.5
+    },
+    {
+      "person": "Coprean Silvestru Titus",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "3",
+      "floor": "",
+      "start": "2026-07-19",
+      "end": "2026-07-20",
+      "rate": 23.5
+    },
+    {
+      "person": "Cristian Daniel",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 25.0
+    },
+    {
+      "person": "Darida Dorin Mark",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-31",
+      "rate": 25.0
+    },
+    {
+      "person": "Darida Gheorghe Lucian",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-22",
+      "rate": 26.0
+    },
+    {
+      "person": "Daszkal Istvan Sandor",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 25.0
+    },
+    {
+      "person": "Daszkal Istvan Sandor",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-23",
+      "end": "2026-07-25",
+      "rate": 25.0
+    },
+    {
+      "person": "Daszkal Istvan Sandor",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "4",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-21",
+      "rate": 21.5
+    },
+    {
+      "person": "Daszkal Norbert",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "4",
+      "floor": "1",
+      "start": "2026-07-12",
+      "end": "2026-07-21",
+      "rate": 21.5
+    },
+    {
+      "person": "Dominco Daniel",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Feher Balazs",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-23",
+      "end": "2026-07-25",
+      "rate": 26.0
+    },
+    {
+      "person": "Feher Balazs",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 25.0
+    },
+    {
+      "person": "Feher Balazs",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Florea Csaba",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-21",
+      "rate": 26.0
+    },
+    {
+      "person": "Florea Csaba",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 26.0
+    },
+    {
+      "person": "Gal Csaba",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "1",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-26",
+      "rate": 23.5
+    },
+    {
+      "person": "Gavrila Adrian Nicolae",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-22",
+      "rate": 25.0
+    },
+    {
+      "person": "Gavrila Adrian Nicolae",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Gavrila Daniel Mihael",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Ghurka Daniel Alexandru",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "2",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-18",
+      "rate": 23.5
+    },
+    {
+      "person": "Hainal Csaba",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-22",
+      "rate": 26.0
+    },
+    {
+      "person": "Hietsoi Vadym",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Horvath Monica",
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "room": "7",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Horvath Vasile",
+      "city": "Deggendorf",
+      "address": "Passauer Straße 18, 94491 Hengersberg, Deutschland",
+      "room": "7",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Huszti Karoly",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-22",
+      "rate": 26.0
+    },
+    {
+      "person": "Kiss Szabolcs",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "6",
+      "floor": "1",
+      "start": "2026-07-12",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Koretskyi Ivan",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Lepadatu Romeo Ionut",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Lisnic Marius Calin",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "1",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-26",
+      "rate": 23.5
+    },
+    {
+      "person": "Micu Mariana Angelica",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "3",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-04",
+      "rate": 23.5
+    },
+    {
+      "person": "Micu Mariana Angelica",
+      "city": "Brochterbeck",
+      "address": "Lengericher Str. 10 , 49545 Tecklenburg",
+      "room": "3",
+      "floor": "",
+      "start": "2026-07-19",
+      "end": "2026-07-20",
+      "rate": 23.5
+    },
+    {
+      "person": "Mocanu Alexandru Stefan",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Mocanu Aurel",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Mocanu Aurel",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-08-02",
+      "rate": 25.0
+    },
+    {
+      "person": "Mocanu Doru",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-21",
+      "rate": 25.0
+    },
+    {
+      "person": "Mocanu Doru",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-31",
+      "rate": 25.0
+    },
+    {
+      "person": "Mona Levente Zsolt",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-23",
+      "end": "2026-07-24",
+      "rate": 25.0
+    },
+    {
+      "person": "Mona Levente Zsolt",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "6",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-22",
+      "rate": 21.5
+    },
+    {
+      "person": "Mona Robert Ioan",
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "room": "2",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-26",
+      "rate": 23.5
+    },
+    {
+      "person": "Olah Gheorghe",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-22",
+      "rate": 26.0
+    },
+    {
+      "person": "Oprea Aron",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-31",
+      "rate": 25.0
+    },
+    {
+      "person": "Panea Ioan Kristisztian",
+      "city": "Schwandorf",
+      "address": "236 Schwandorf 92421 Rothlindestr 7 b",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-25",
+      "rate": 26.0
+    },
+    {
+      "person": "Panea Ioan Kristisztian",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-21",
+      "rate": 26.0
+    },
+    {
+      "person": "Poiana Constantin",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Probli Janos Joseph",
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "room": "2",
+      "floor": "",
+      "start": "2026-06-29",
+      "end": "2026-07-18",
+      "rate": 23.5
+    },
+    {
+      "person": "PROVIZORIU Traian",
+      "city": "BRONHOF",
+      "address": "Albertshausener Str. 23, 97688 Bad Kissingen OT Albertshausen",
+      "room": "3",
+      "floor": "1",
+      "start": "2026-07-22",
+      "end": "2026-07-25",
+      "rate": 25.0
+    },
+    {
+      "person": "Rostas Ambroziu Adrian",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "5",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Rostas Ambroziu Valeriu",
+      "city": "Deggendorf",
+      "address": "GOIDERTWEG 10,94469 DEGGENDORF",
+      "room": "5",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Tanase Ștefan",
+      "city": "Brochterbeck",
+      "address": "Rotdornweg 11; 48477 Hörstel",
+      "room": "1",
+      "floor": "",
+      "start": "2026-07-05",
+      "end": "2026-07-18",
+      "rate": 23.5
+    },
+    {
+      "person": "Trifan Olimpiu",
+      "city": "Schwandorf",
+      "address": "236 Schwandorf 92421 Rothlindestr 7 b",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-07-25",
+      "rate": 26.0
+    },
+    {
+      "person": "Ungurianu Ionel",
+      "city": "Deggendorf",
+      "address": "INDUSTRIE STR.18,94459 DEGGENDORF",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-07-05",
+      "end": "2026-08-02",
+      "rate": 21.5
+    },
+    {
+      "person": "Vasiliu Marius Gabriel",
+      "city": "Schwandorf",
+      "address": "238 Schwandorf 92421 Rothlindestr 27",
+      "room": "1",
+      "floor": "1",
+      "start": "2026-07-23",
+      "end": "2026-07-25",
+      "rate": 26.0
+    },
+    {
+      "person": "Vasiliu Marius Gabriel",
+      "city": "BRONHOF",
+      "address": "Gartenstraße 15,97490 Poppenhausen",
+      "room": "2",
+      "floor": "1",
+      "start": "2026-06-29",
+      "end": "2026-07-22",
+      "rate": 25.0
+    }
+  ],
+  "overlaps": []
+}

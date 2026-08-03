@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10243a">
+  <title>SiteFlow · Housing v0.11.14</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar"><div class="sidebar-resizer" id="sidebarResizer" title="Trage pentru redimensionarea meniului"></div>
+      <div class="brand-block"><div class="brand-mark">SF</div><div><strong>SiteFlow</strong><span>Operations Platform</span></div></div>
+      <nav class="main-nav" aria-label="Navigare principală">
+        <div class="nav-group open" data-group="housing">
+          <button class="nav-link nav-parent active" data-view="housing"><span class="nav-icon housing-icon">⌂</span><b>Housing</b><span class="chevron">⌄</span></button>
+          <div class="nav-children">
+            <div class="nav-subgroup-label">HOUSING</div>
+            <button class="nav-child" data-section="dashboard"><span>▦</span>Dashboard</button>
+            <div class="nav-subgroup-label">PLANIFICARE</div>
+            <button class="nav-child active" data-section="planner"><span>▦</span>Planner</button>
+            <div class="sidebar-section open">
+              <button class="sidebar-section-toggle" type="button"><span>CAZĂRI</span><b>⌄</b></button>
+              <div class="sidebar-section-body">
+                <button class="nav-child" data-section="active"><span>●</span>Active <em id="activeBadge">—</em></button>
+                <button class="nav-child" data-section="planned"><span>◷</span>Planificate <em id="plannedBadge">—</em></button>
+                <button class="nav-child" data-section="movements"><span>⇄</span>Sosiri și plecări <em id="movementsBadge">—</em></button>
+                <button class="nav-child" data-section="expired"><span>⚠</span>Expirate <em id="expiredBadge">—</em></button>
+              </div>
+            </div>
+            <div class="sidebar-section open">
+              <button class="sidebar-section-toggle" type="button"><span>PERSOANE</span><b>⌄</b></button>
+              <div class="sidebar-section-body">
+                <button class="nav-child" data-section="unhoused"><span>!</span>Necazate <em id="unhousedBadge">—</em></button>
+                <button class="nav-child" data-section="history"><span>↺</span>Istoric cazări <em id="historyBadge">—</em></button>
+              </div>
+            </div>
+            <div class="sidebar-section open">
+              <button class="sidebar-section-toggle" type="button"><span>CONFIGURARE</span><b>⌄</b></button>
+              <div class="sidebar-section-body">
+                <button class="nav-child" data-section="locations"><span>⌖</span>Locații <em id="locationsBadge">—</em></button>
+                <button class="nav-child" data-section="rooms"><span>▤</span>Camere <em id="roomsBadge">—</em></button>
+                <button class="nav-child" data-section="costs"><span>€</span>Costuri și facturare <em id="costsBadge">—</em></button>
+                <button class="nav-child" data-section="reports"><span>↗</span>Rapoarte <em id="reportsBadge">—</em></button>
+                <button class="nav-child" data-section="alerts"><span>⚠</span>Alerte <em id="alertsBadge">—</em></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="workspace-label">MODULE</div>
+      <nav class="main-nav module-nav">
+        <button class="nav-link locked" data-module-name="Site Activities"><span class="nav-icon activity-icon">☀</span><b>Site Activities</b><em>Curând</em></button>
+        <button class="nav-link locked" data-module-name="HR"><span class="nav-icon hr-icon">◎</span><b>HR</b><em>Curând</em></button>
+        <button class="nav-link locked" data-module-name="Assets / Tools"><span class="nav-icon assets-icon">◆</span><b>Assets / Tools</b><em>Curând</em></button>
+        <button class="nav-link locked" data-module-name="Fleet"><span class="nav-icon fleet-icon">▱</span><b>Fleet</b><em>Curând</em></button>
+        <button class="nav-link locked" data-module-name="Documents"><span class="nav-icon docs-icon">▤</span><b>Documents</b><em>Curând</em></button>
+      </nav>
+      <div class="workspace-label">SISTEM</div>
+      <nav class="main-nav admin-nav"><button class="nav-link" id="adminPeople"><span class="nav-icon">♙</span><b>Persoane</b></button><button class="nav-link" id="adminCompanies"><span class="nav-icon">▦</span><b>Companii</b></button><button class="nav-link" id="adminSites"><span class="nav-icon">⌁</span><b>Șantiere</b></button><button class="nav-link" id="adminUsers"><span class="nav-icon">♧</span><b>Utilizatori</b></button><button class="nav-link" id="adminRoles"><span class="nav-icon">◈</span><b>Roluri și permisiuni</b></button><button class="nav-link" id="adminBtn"><span class="nav-icon">⚙</span><b>Setări generale</b></button></nav>
+      <div class="sidebar-footer"><div class="connection"><i id="connectionDot"></i><span id="connectionLabel">Conectare…</span></div><small>SiteFlow · Housing v0.11.14</small></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Deschide meniul">☰</button>
+        <div class="topbar-title"><span id="moduleEyebrow">MODUL</span><strong id="moduleTitle">Housing</strong></div>
+        <div class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Caută persoană, locație sau cameră"></div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="themeToggle" title="Schimbă tema" aria-label="Schimbă tema">☾</button>
+          <button class="secondary-btn" id="refreshBtn">↻ <span>Actualizează</span></button>
+          <button class="primary-btn" id="newStayBtn">＋ Cazare nouă</button>
+          <button class="avatar-btn" id="profileBtn">G</button>
+        </div>
+      </header>
+
+      <section class="page" id="dashboardView">
+        <div class="page-heading"><div><span class="eyebrow">SITEFLOW / HOUSING</span><h1>Dashboard Housing</h1><p>Ocupare, mișcări, capacitate și costuri pentru modulul Housing.</p></div><div class="date-chip" id="todayLabel"></div></div>
+        <div class="metrics-grid" id="dashboardMetrics"></div>
+        <div class="dashboard-grid">
+          <article class="panel occupancy-panel"><div class="panel-heading"><div><span class="eyebrow">HOUSING</span><h2>Ocupare curentă</h2></div><strong id="occupancyPercent">—</strong></div><div class="occupancy-track"><i id="occupancyBar"></i></div><div class="capacity-row"><span><b id="occupiedBeds">—</b> ocupate</span><span><b id="freeBeds">—</b> disponibile</span></div></article>
+          <article class="panel"><div class="panel-heading"><div><span class="eyebrow">ASTĂZI</span><h2>Mișcări planificate</h2></div></div><div class="movement-list" id="todayMovements"></div></article>
+        </div>
+        <section class="housing-charts-grid">
+          <article class="panel chart-panel"><div class="panel-heading"><div><span class="eyebrow">OCUPARE</span><h2>Evoluție 6 luni</h2></div></div><div id="occupancyChart" class="bar-chart"></div></article>
+          <article class="panel chart-panel"><div class="panel-heading"><div><span class="eyebrow">CAPACITATE</span><h2>Distribuție pe locații</h2></div></div><div id="locationCapacityChart" class="donut-dashboard"></div></article>
+        </section>
+        <section class="dashboard-cost-section" id="dashboardCosts"></section>
+              </section>
+
+      <section class="page hidden" id="housingView">
+        <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING</span><h1 id="housingHeading">Planner cazare</h1><p id="housingSubheading">Mută, filtrează și gestionează perioadele de cazare.</p></div><div class="heading-actions"><button class="secondary-btn" id="costsShortcut">€ Costuri</button><button class="secondary-btn" id="reportsShortcut">↗ Rapoarte</button><div class="live-pill"><i></i>Date live din Supabase</div></div></div>
+        <div class="metrics-grid" id="housingMetrics"></div>
+
+        <div class="filter-drawer" id="filterDrawer">
+          <div class="filter-group"><label>Locație</label><select id="locationFilter"><option value="">Toate locațiile</option></select></div>
+          <div class="filter-group"><label>Șantier</label><select id="siteFilter"><option value="">Toate șantierele</option></select></div><div class="filter-group"><label>Status</label><select id="statusFilter"><option value="">Toate statusurile</option><option value="active">Active</option><option value="planned">Planificate</option><option value="completed">Încheiate</option></select></div>
+          <div class="filter-group"><label>Afișare</label><select id="daysFilter"><option value="7">7 zile</option><option value="14" selected>14 zile</option><option value="30">30 zile</option></select></div>
+          <div class="filter-group"><label>Perioada începe</label><input type="date" id="startDate"></div>
+          <label class="check-filter"><input type="checkbox" id="onlyAvailable"> doar camere cu locuri libere</label>
+          <button class="text-btn" id="resetFilters">Resetează filtrele</button>
+        </div>
+
+        <div class="panel planner-panel" id="plannerPanel">
+          <div class="planner-toolbar">
+            <div class="view-tabs"><button class="view-tab active" data-housing-tab="planner">Planner</button><button class="view-tab" data-housing-tab="list">Listă cazări</button><button class="view-tab" data-housing-tab="rooms">Camere</button></div>
+            <div class="toolbar-spacer"></div><div class="zoom-switch" aria-label="Zoom planner"><button id="zoomOutBtn" title="Micșorează">−</button><span id="zoomLabel">100%</span><button id="zoomInBtn" title="Mărește">＋</button></div><div class="days-switch"><button data-days="7">7 zile</button><button data-days="14" class="active">14 zile</button><button data-days="30">30 zile</button></div><button class="secondary-btn" id="prevBtn">←</button><button class="secondary-btn" id="todayBtn">Astăzi</button><button class="secondary-btn" id="nextBtn">→</button><button class="secondary-btn" id="plannerSettingsBtn">⚙</button>
+          </div>
+          <div class="planner-header"><div><h2>Locații și camere</h2><span id="rangeLabel">—</span></div><span id="resultCount">—</span></div>
+          <div id="dragPreview" class="drag-preview hidden"></div><div class="planner-layout"><div class="planner-scroll" id="plannerScroll"><div id="planner" class="loading-state">Se încarcă datele reale…</div></div></div><div class="planner-footer"><span>↔ Trage bara pentru mutare</span><span>↕ Trage marginile pentru redimensionare</span><span>⋮ Click pe bară pentru opțiuni</span><button id="compactRowsBtn">Compactare rânduri</button></div>
+        </div>
+        <div class="panel hidden" id="listPanel"><div class="panel-heading"><div><span class="eyebrow">CAZĂRI</span><h2>Lista perioadelor</h2></div></div><div class="data-table-wrap" id="stayList"></div></div>
+        <div class="panel hidden" id="roomsPanel"><div class="panel-heading"><div><span class="eyebrow">CAPACITATE</span><h2>Locații și camere</h2></div></div><div class="room-cards" id="roomCards"></div></div>
+      </section>
+
+
+      <section class="page hidden" id="historyView">
+        <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING / ISTORIC</span><h1>Istoric cazări</h1><p>Registrul tuturor cazărilor, perioadelor, tarifelor și costurilor.</p></div><div class="heading-actions"><button class="primary-btn" id="historyExportBtn">↗ Exportă / Printează</button></div></div>
+        <div class="history-summary-grid" id="historySummary"></div>
+        <div class="panel history-page-panel">
+          <form id="historyPageFilters" class="cost-filter cost-filter-extended"></form>
+          <div class="data-table-wrap" id="historyPageContent"></div>
+        </div>
+      </section>
+
+
+      <section class="page hidden" id="unhousedView">
+        <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING / PERSOANE</span><h1>Persoane necazate</h1><p>Persoane fără cazare activă, cu filtrare și acțiuni rapide.</p></div><div class="heading-actions"><button class="primary-btn" id="unhousedNewBtn">＋ Cazare nouă</button></div></div>
+        <div class="history-summary-grid" id="unhousedSummary"></div>
+        <div class="panel history-page-panel"><form id="unhousedFilters" class="cost-filter cost-filter-extended"></form><div class="data-table-wrap" id="unhousedPageContent"></div></div>
+      </section>
+
+      <section class="page hidden" id="alertsView">
+        <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING / CONTROL</span><h1>Alerte Housing</h1><p>Probleme operaționale care necesită verificare sau intervenție.</p></div></div>
+        <div class="history-summary-grid" id="alertsSummary"></div>
+        <div class="panel history-page-panel"><form id="alertsFilters" class="cost-filter cost-filter-extended"></form><div class="data-table-wrap" id="alertsPageContent"></div></div>
+      </section>
+
+      <section class="page hidden" id="financeView">
+        <div class="page-heading compact"><div><span class="eyebrow">SITEFLOW / HOUSING / FINANCIAR</span><h1>Costuri și facturare</h1><p>Tarife, costuri calculate, distribuții și export pentru Housing.</p></div><div class="heading-actions"><button class="secondary-btn" id="financeRatesBtn">⚙ Tarife camere</button><button class="primary-btn" id="financeExportBtn">↗ Exportă / Printează</button></div></div>
+        <div class="panel finance-page-panel"><form id="financeFilterForm" class="cost-filter cost-filter-extended"></form><div id="financePageContent"></div></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="context-menu hidden" id="contextMenu"></div>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal wide">
+      <button class="modal-close" id="modalClose">×</button>
+      <span class="eyebrow" id="modalEyebrow">HOUSING</span><h2 id="modalTitle">Detalii</h2>
+      <div id="modalBody"><p id="modalText"></p></div>
+      <div class="modal-actions" id="modalActions"><button class="secondary-btn" id="modalCancel">Închide</button></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="services/supabase-service.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
