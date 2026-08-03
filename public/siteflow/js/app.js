@@ -25,6 +25,7 @@ function siteCatalog(){
   if(!byId.size)state.locations.forEach(l=>byId.set(`loc:${l.id}`,{id:`loc:${l.id}`,name:locName(l),source:'location-fallback',location_id:l.id}));
   return [...byId.values()].sort((a,b)=>a.name.localeCompare(b.name,'ro'));
 }
+function siteOptions(){return siteCatalog()}
 function fillSites(){const el=$('siteFilter');if(!el)return;const v=el.value;const items=siteCatalog();el.innerHTML='<option value="">Toate șantierele</option>'+items.map(x=>`<option value="${esc(x.id)}">${esc(x.name)}</option>`).join('');el.value=items.some(x=>String(x.id)===String(v))?v:''}
 const metric=(label,value,sub,icon,tone='blue',action='')=>`<article class="metric-card tone-${tone}${action?' clickable':''}" ${action?`data-metric-action="${action}" tabindex="0" role="button"`:''}><div><span>${label}</span><strong>${value}</strong><small>${sub}</small></div><i>${icon}</i></article>`;
 function toast(text,type='ok'){const el=$('toast');el.textContent=text;el.className=`toast show ${type}`;clearTimeout(toast.t);toast.t=setTimeout(()=>el.className='toast',2600)}
