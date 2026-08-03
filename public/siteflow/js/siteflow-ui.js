@@ -594,16 +594,6 @@
 
   /* ---------- Nav wiring for the new sections ----------------------------- */
 
-  document.querySelectorAll("[data-section='settings']").forEach(function (b) {
-    b.addEventListener(
-      "click",
-      function () {
-        core.switchView("settings");
-      },
-      true
-    );
-  });
-
   document.addEventListener("siteflow:language", function () {
     if (core.state.view === "settings") window.renderSettingsPage();
     if (core.state.view === "reports") window.renderReportsPage();
