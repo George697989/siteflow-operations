@@ -1675,3 +1675,8 @@ textarea:focus {
   color: var(--nav-ink);
   font-weight: 500;
 }
+
+/* Toolbar sticks to the planner card, not the page (avoids a leading gap) */
+.planner-toolbar {
+  position: static !important;
+}
