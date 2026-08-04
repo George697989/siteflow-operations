@@ -135,9 +135,6 @@
 .location-group-row {
   min-height: 30px !important;
   padding: 0 12px !important;
-  position: sticky;
-  left: 0;
-  z-index: 16;
 }
 .location-group-row strong {
   font-size: 10.5px;
@@ -343,6 +340,10 @@
   color: var(--brand);
 }
 
+.status-pill,
+.status-chip {
+  white-space: nowrap;
+}
 tr.sf-row-hidden {
   display: none;
 }
