@@ -150,10 +150,7 @@
   color: var(--muted-2);
 }
 .stay-bar {
-  height: 22px;
-  min-height: 22px;
-  border-radius: 5px;
-  font-size: 10.5px;
+  border-radius: 6px;
   cursor: grab;
 }
 .stay-bar:active {
