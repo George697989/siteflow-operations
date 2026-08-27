@@ -57,7 +57,7 @@
       </nav>
       <div class="workspace-label" data-i18n="group.modules">MODULE</div>
       <nav class="main-nav module-nav">
-        <button class="nav-link locked" data-module-name="Site Activities"><span class="nav-icon activity-icon">☀</span><b>Site Activities</b><em data-i18n="nav.soon">Curând</em></button>
+        <button class="nav-link" id="activitiesNav"><span class="nav-icon activity-icon">☀</span><b>Site Activities</b><em class="demo-tag">Demo</em></button>
         <button class="nav-link locked" data-module-name="HR"><span class="nav-icon hr-icon">◎</span><b>HR</b><em data-i18n="nav.soon">Curând</em></button>
         <button class="nav-link locked" data-module-name="Assets / Tools"><span class="nav-icon assets-icon">◆</span><b>Assets / Tools</b><em data-i18n="nav.soon">Curând</em></button>
         <button class="nav-link locked" data-module-name="Fleet"><span class="nav-icon fleet-icon">▱</span><b>Fleet</b><em data-i18n="nav.soon">Curând</em></button>
@@ -158,6 +158,37 @@
         </div>
       </section>
 
+      <section class="page hidden" id="activitiesView">
+        <div class="page-heading compact">
+          <div><span class="eyebrow">SITEFLOW / SITE ACTIVITIES · DATE DEMO</span><h1>Centrul operațional – Buchloe</h1><p>Progres tehnic, echipe, cantități și issue-uri pentru șantierul Buchloe.</p></div>
+          <div class="heading-actions">
+            <select id="saProject" class="sa-select"><option value="buchloe" selected>Buchloe</option></select>
+            <input type="date" id="saDate" class="sa-select">
+            <button class="primary-btn" id="saReportBtn">＋ Raportează activitate</button>
+          </div>
+        </div>
+        <div class="metrics-grid" id="saKpis"></div>
+        <div class="sa-main-grid">
+          <div class="panel sa-map-panel">
+            <div class="panel-heading">
+              <div><span class="eyebrow">PROGRES TEHNIC</span><h2>Hartă progres pe zone</h2></div>
+              <div class="sa-disc-filters" id="saDiscFilters"></div>
+            </div>
+            <div class="sa-map-legend" id="saMapLegend"></div>
+            <div class="sa-map-wrap"><div class="sa-map" id="saMap"></div></div>
+          </div>
+          <div class="sa-side">
+            <div class="panel"><div class="panel-heading"><div><span class="eyebrow">FLUX</span><h2>Activitate astăzi</h2></div></div><div class="sa-feed" id="saFeed"></div></div>
+            <div class="panel"><div class="panel-heading"><div><span class="eyebrow">PREZENȚĂ</span><h2>Echipe pe șantier</h2></div></div><div id="saCrews"></div></div>
+            <div class="panel"><div class="panel-heading"><div><span class="eyebrow">CANTITĂȚI</span><h2>Cantități astăzi</h2></div></div><div id="saQuantities"></div></div>
+          </div>
+        </div>
+        <div class="sa-lower-grid">
+          <div class="panel"><div class="panel-heading"><div><span class="eyebrow">S-CURVE</span><h2>Producție vs Plan</h2></div></div><div class="data-table-wrap" id="saProdTable"></div></div>
+          <div class="panel"><div class="panel-heading"><div><span class="eyebrow">BLOCAJE</span><h2>Issue-uri deschise</h2></div><strong id="saIssueCount">—</strong></div><div id="saIssues"></div></div>
+        </div>
+      </section>
+
       <section class="page hidden" id="settingsView">
         <div class="page-heading compact"><div><span class="eyebrow" data-i18n="page.settings.crumb">SITEFLOW / HOUSING / SETĂRI</span><h1 data-i18n="page.settings.title">Setări</h1><p data-i18n="page.settings.sub">Preferințe de afișare, limbă și comportament pentru modulul Housing.</p></div></div>
         <div id="settingsContent"></div>
@@ -183,5 +214,6 @@
   <script src="js/app.js"></script>
   <script src="js/siteflow-ui.js"></script>
   <script src="js/siteflow-ux.js"></script>
+  <script src="js/siteflow-activities.js"></script>
 </body>
 </html>
