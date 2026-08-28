@@ -1,0 +1,3 @@
+document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav,.view').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.view).classList.add('active');document.getElementById('title').textContent=b.querySelector('span').textContent});
+const map=document.getElementById('solarMap');[1,2,3,4].forEach(n=>{const d=document.createElement('div');d.className='zone';d.dataset.zone=n;map.appendChild(d)});
+document.getElementById('importRows').innerHTML=Array.from({length:10},(_,i)=>`<tr><td>${i<4?1:2}</td><td>WR${i+1}</td><td>${i%2?'E':'V'}</td><td>28</td><td>29</td><td>3</td></tr>`).join('');
